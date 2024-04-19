@@ -1,0 +1,420 @@
+/* PALETA DE CORES */
+:root{
+  --cor1:#190526;
+  --cor2:#300949;
+  --cor3:#8414ce;
+  --cor4: #818181;
+  --cor5: #fff;
+}
+/* ESTILO GERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor1));
+  height: 100%;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--cor3);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover{
+  box-shadow: 0px 0px 8px #8414ce;
+  transform: scale(1.05);
+}
+
+h2.titulo{
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #8414ce;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.interface .logo img{
+  height: 180px;
+  width: 180px;
+  cursor: auto;
+}
+
+header a{
+  color: var(--cor4);
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+header a:hover{
+  color: var(--cor5);
+  transform: scale(1.05);
+}
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+/*ESTILO TOPO DO SITE */
+section.topo-site{
+  padding: 40px 4%;
+}
+
+section.topo-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-site h1{
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-site .txt-topo-site h1 span{
+  color: var(--cor3);
+}
+
+.topo-site .txt-topo-site p{
+  color: #fff;
+  margin: 40px 0;
+}
+
+.topo-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  filter:drop-shadow(0px 0px 18px #8414ce75);
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+  padding: 40px 4%;
+}
+
+section.especialidades .flex{
+  gap: 40px;
+}
+
+.especialidades .especialidades-box{
+  color: var(--cor5);
+  padding: 35px;
+  border-radius: 20px;
+  margin-top: 40px;
+  transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff33;
+}
+
+.especialidades .especialidades-box i{
+  font-size: 70px;
+  color: var(--cor3);
+}
+
+.especialidades .especialidades-box h3{
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+  padding: 80px 4%;
+}
+
+section.sobre .img-sobre img{
+  border-radius: 25px;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre{
+  color: var(--cor5);
+}
+
+.sobre .txt-sobre h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+  color: var(--cor3);
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre .socials button{
+  color: var(--cor5);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--cor3);
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: .2s;
+}
+
+/* ESTILO DO PROJETOS */
+section.projetos{
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.11);
+}
+
+section.projetos .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.img-proj{
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  background-position: 100% 0%;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  transition: 4s;
+}
+
+.site1{
+  background-image: url(../images/Site-Android-Thialy.png);
+}
+.site2{
+  background-image: url(../images/Site-Android-Thialy.png);
+}
+.site3{
+  background-image: url(../images/Site-Android-Thialy.png);
+}
+
+.img-proj:hover{
+  background-position: 100% 100%;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor5);
+  opacity: 0;
+}
+
+.overlay:hover{
+  opacity: 100%;
+  transition: 0.5s;
+}
+
+
+/* FALE COMIGO */
+
+section.contato {
+  padding: 80px 4%;
+}
+
+section.contato .flex{
+  justify-content: space-around;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.contatos img{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px var(--cor3);
+}
+.contatos h3{
+  color: var(--cor5);
+  text-shadow: 2px 2px 5px var(--cor3);
+}
+.contatos{
+  transition: 0.5s;
+}
+.contatos:hover{
+  transform: scale(1.05);
+}
+
+/* ESTILO FOOTER */
+footer{
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.11);
+}
+
+footer .flex{
+  justify-content: center;
+}
+
+footer .line-footer{
+  padding: 10px;
+}
+
+footer .line-footer p i{
+  color: var(--cor3);
+  font-size: 20px;
+}
+
+footer .line-footer p a{
+  color: rgba(255, 255, 255, 0.651);
+  text-decoration: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1269px){
+  /* CLASSES GERAIS */
+  .flex{
+    flex-direction: column;
+  }
+
+  .topo-site .flex{
+    flex-direction: column-reverse;
+  }
+
+  h2.titulo{
+    font-size: 34px;
+    line-height: 30px;
+  }
+
+  /* CABEÇALHO */
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+
+  .interface .logo {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  /* TOPO DO SITE */
+  section.topo-site{
+    padding: 20px 8%;
+  }
+
+  section.topo-site .flex{
+    gap: 40px;
+  }
+
+  .topo-site h1{
+    font-size: 30px;
+  }
+
+  .topo-site .img-topo-site img{
+    width: 100%;
+  }
+
+  /* ESPECIALIDADES */
+
+  section.especialidades{
+    padding: 40px 8%;
+  }
+
+  /* SOBRE */
+
+    .sobre .flex{
+    flex-direction: column-reverse;
+  }
+
+  section.sobre{
+    padding: 80px 8%;
+  }
+
+  .sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .socials{
+    text-align: center;
+  }
+
+  .img-sobre img{
+    width: 100%;
+  }
+
+  /* PORTFÓLIO */
+    
+  section.projetos{
+    padding: 80px 8%;
+  }
+
+  .img-proj{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  section.projetos .flex{
+    gap: 60px;
+  }
+
+  /* FOOTER */
+footer .line-footer{
+  text-align: center;
+}
+}
