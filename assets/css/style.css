@@ -328,7 +328,7 @@ footer .line-footer p a{
 
 /* MEDIA QUERY */
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 1000px){
     /* CLASSES GERAIS */
     .topo-site .flex{
       flex-direction: column;
@@ -407,7 +407,8 @@ footer .line-footer p a{
       text-align: center;
     }
 
-    .img-sobre{display: none;
+    .img-sobre{
+      display: none;
     }
 
     /* PROJETOS */
@@ -453,10 +454,37 @@ footer .line-footer p a{
   }
 
   
-  @media screen and (max-width: 1135px){
+  @media screen and (max-width: 1158px){
     section.contato .flex{
       flex-wrap: wrap;
     }
+
+     /* CABEÇALHO */
+     .menu-desktop {
+      display: none;
+    }
+
+    .topo-site .interface .flex .btn-contato{
+      display: block;
+    }
+
+    .interface .logo {
+      display: block;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    section.contato .contatos img{
+      width: 15vw;
+      height: 24vh;
+    }
+  }
+  @media screen and (max-width: 1090px){
+
+  section.especialidades .flex{
+    flex-direction: column;
+    gap: 1px;
+  }
   }
   @media screen and (max-width: 1014px){
        
@@ -469,7 +497,6 @@ footer .line-footer p a{
     height: 50vh;
     margin: 0 auto;
   }
-
   .projetos .flex{
     flex-wrap: wrap;
   }
@@ -478,35 +505,64 @@ footer .line-footer p a{
     gap: 10px;
   }
   }
+  
+  @media screen and (max-width: 870px){
+    section.contato .contatos img{
+      width: 15vw;
+      height: 21vh; 
+    }
+      .img-proj{
+      width: 26vw;
+      height: 42vh;
+      margin: 0 auto;
+    }
+    
+    }
 
-  @media screen and (max-width: 758px){
+  @media screen and (max-width: 740px){
+    section.contato .contatos img{
+      width: 15vw;
+      height: 15vh;
+    }
     .img-proj{
       width: 26vw;
-      height: 40vh;
+      height: 35vh;
       margin: 0 auto;
     }
   }
-  @media screen and (max-width: 606px){
+  @media screen and (max-width: 610px){
     .img-proj{
       width: 26vw;
       height: 30vh;
       margin: 0 auto;
-    }}
-
-  @media screen and (max-width: 520px){
-    .img-proj{
-      width: 25vw;
-      height: 25vh;
-      margin: 0 auto;
-    }
-
-    .contatos img{
-      width: 30vw;
-      height: 25vh;
-    }
-    .projetos .overlay{
-      font-size: 15px;
     }
   }
+  @media screen and (max-width: 555px){
+    section.contato .contatos img{
+      width: 15vw;
+      height: 11vh;
+    }
+
+    .img-proj{
+      width: 24vw;
+      height: 24vh;
+      margin: 0 auto;
+    }
+  }
+
+  
+  @media screen and (max-width: 415px){
+    section.contato .contatos img{
+      width: 20vw;
+      height: 10vh;
+    }
+
+    .img-proj{
+      width: 25vw;
+      height: 17vh;
+      margin: 0 auto;
+    }
+  }
+
   /*FIM MEDIA QUERY */
 
