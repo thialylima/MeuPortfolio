@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* PALETA DE CORES */
 :root{
   --cor1:#190526;
@@ -6,6 +8,7 @@
   --cor4: #818181;
   --cor5: #fff;
 }
+
 /* ESTILO GERAL*/
 *{
   margin: 0;
@@ -40,7 +43,7 @@ body{
 }
 
 button:hover{
-  box-shadow: 0px 0px 8px #8414ce;
+  box-shadow: 0px 0px 8px var(--cor3);
   transform: scale(1.05);
 }
 
@@ -51,7 +54,7 @@ h2.titulo{
 }
 
 h2.titulo span{
-  color: #8414ce;
+  color: var(--cor3);
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -223,8 +226,8 @@ section.projetos .flex{
 }
 
 .img-proj{
-  width: 360px;
-  height: 460px;
+  width: 300px;
+  height: 400px;
   background-size: cover;
   background-position: 100% 0%;
   cursor: pointer;
@@ -237,7 +240,7 @@ section.projetos .flex{
   background-image: url(../images/Site-Android-Thialy.png);
 }
 .site2{
-  background-image: url(../images/Site-Android-Thialy.png);
+  background-image: url(../images/pokedex-site.png);
 }
 .site3{
   background-image: url(../images/Site-Android-Thialy.png);
@@ -283,8 +286,8 @@ section.contato .flex{
 }
 
 .contatos img{
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 20px var(--cor3);
@@ -324,97 +327,186 @@ footer .line-footer p a{
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 1269px){
-  /* CLASSES GERAIS */
-  .flex{
-    flex-direction: column;
-  }
 
-  .topo-site .flex{
-    flex-direction: column-reverse;
-  }
+  @media screen and (max-width: 700px){
+    /* CLASSES GERAIS */
+    .topo-site .flex{
+      flex-direction: column;
+    }
 
-  h2.titulo{
-    font-size: 34px;
-    line-height: 30px;
-  }
+    h2.titulo{
+      font-size: 34px;
+      line-height: 30px;
+    }
 
-  /* CABEÇALHO */
-  .menu-desktop, .btn-contato{
-    display: none;
-  }
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+      display: none;
+    }
 
-  .interface .logo {
-    display: block;
-    justify-content: center;
-    margin: 0 auto;
-  }
+    .interface .logo {
+      display: block;
+      justify-content: center;
+      margin: 0 auto;
+    }
 
-  /* TOPO DO SITE */
-  section.topo-site{
-    padding: 20px 8%;
-  }
+    /* TOPO DO SITE */
+    section.topo-site{
+      padding: 20px 8%;
+    }
 
-  section.topo-site .flex{
-    gap: 40px;
-  }
+    section.topo-site .flex{
+      flex-direction: column;
+      gap: 30px;
+    }
 
-  .topo-site h1{
-    font-size: 30px;
-  }
+    .topo-site h1{
+      font-size: 30px;
+    }
 
-  .topo-site .img-topo-site img{
-    width: 100%;
-  }
-
-  /* ESPECIALIDADES */
-
-  section.especialidades{
-    padding: 40px 8%;
-  }
-
-  /* SOBRE */
-
-    .sobre .flex{
-    flex-direction: column-reverse;
-  }
-
-  section.sobre{
-    padding: 80px 8%;
-  }
-
-  .sobre .txt-sobre h2{
-    font-size: 34px;
-    line-height: 35px;
-    text-align: center;
-  }
-
-  .socials{
-    text-align: center;
-  }
-
-  .img-sobre img{
-    width: 100%;
-  }
-
-  /* PORTFÓLIO */
+    .topo-site .img-topo-site{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     
-  section.projetos{
-    padding: 80px 8%;
+    .topo-site .img-topo-site img{
+      width: 70%;
+    }
+
+    /* ESPECIALIDADES */
+
+    section.especialidades .flex{
+      flex-direction: column;
+      padding: 40px 4%;
+    }
+
+    section.especialidades{
+      text-align: center;
+    }
+    .especialidades .especialidades-box{
+      margin-top: 8px;
+    }
+    /* SOBRE */
+
+      .sobre .flex{
+      flex-direction: column;
+    }
+
+    section.sobre{
+      padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+      font-size: 34px;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    .socials{
+      text-align: center;
+    }
+
+    .img-sobre{display: none;
+    }
+
+    /* PROJETOS */
+      
+    section.projetos{
+      padding: 80px 8%;
+    }
+
+    .img-proj{
+      width: 26vw;
+      height: 40vh;
+      margin: 0 auto;
+    }
+
+    .projetos .flex{
+      flex-wrap: wrap;
+    }
+
+    section.projetos .flex{
+      gap: 4px;
+    }
+
+  /* FALE COMIGO */
+    
+  section.contato .flex{
+    margin: 5px;
+    flex-wrap: wrap;
+    padding: 40px 4%;
+  }
+  
+  section.contato {
+    padding: 60px 10px 20px 10px;
+}
+
+  .contatos h3 {
+    margin-bottom: 15px;
+  }
+
+    /* FOOTER */
+  footer .line-footer{
+    text-align: center;
+  }
+  }
+
+  
+  @media screen and (max-width: 1135px){
+    section.contato .flex{
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1014px){
+       
+  section.contato .flex{
+    flex-wrap: wrap;
   }
 
   .img-proj{
-    width: 100%;
-    max-width: 360px;
+    width: 26vw;
+    height: 50vh;
     margin: 0 auto;
   }
 
-  section.projetos .flex{
-    gap: 60px;
+  .projetos .flex{
+    flex-wrap: wrap;
   }
 
-  /* FOOTER */
-footer .line-footer{
-  text-align: center;
-}
-}
+  section.projetos .flex{
+    gap: 10px;
+  }
+  }
+
+  @media screen and (max-width: 758px){
+    .img-proj{
+      width: 26vw;
+      height: 40vh;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 606px){
+    .img-proj{
+      width: 26vw;
+      height: 30vh;
+      margin: 0 auto;
+    }}
+
+  @media screen and (max-width: 520px){
+    .img-proj{
+      width: 25vw;
+      height: 25vh;
+      margin: 0 auto;
+    }
+
+    .contatos img{
+      width: 30vw;
+      height: 25vh;
+    }
+    .projetos .overlay{
+      font-size: 15px;
+    }
+  }
+  /*FIM MEDIA QUERY */
+
