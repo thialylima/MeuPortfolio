@@ -543,7 +543,9 @@ footer .line-footer p a{
       width: 15vw;
       height: 11vh;
     }
-
+    .overlay{
+      font-size: 3vw;
+    }
     .img-proj{
       width: 24vw;
       height: 24vh;
