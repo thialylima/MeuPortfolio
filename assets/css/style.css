@@ -537,14 +537,14 @@ footer .line-footer p a{
       height: 30vh;
       margin: 0 auto;
     }
+    .overlay{
+      font-size: 15px;
+    }
   }
   @media screen and (max-width: 555px){
     section.contato .contatos img{
       width: 15vw;
       height: 11vh;
-    }
-    .overlay{
-      font-size: 3vw;
     }
     .img-proj{
       width: 24vw;
