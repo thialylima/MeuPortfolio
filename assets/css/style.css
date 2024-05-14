@@ -524,8 +524,9 @@ footer .line-footer p a{
       width: 15vw;
       height: 15vh;
     }
+    
     .img-proj{
-      width: 26vw;
+      width: 26vw; 
       height: 35vh;
       margin: 0 auto;
     }
