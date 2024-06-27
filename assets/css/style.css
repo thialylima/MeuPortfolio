@@ -17,6 +17,20 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(28, 1, 45);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(150, 0, 176); 
+  border-radius: 20px;  
+  border: 3px solid rgb(91, 7, 119);
+}
+
 body{
   background: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor1));
   height: 100%;
@@ -143,6 +157,8 @@ section.especialidades{
 
 section.especialidades .flex{
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .especialidades .especialidades-box{
@@ -243,7 +259,7 @@ section.projetos .flex{
   background-image: url(../images/pokedex-site.png);
 }
 .site3{
-  background-image: url(../images/Site-Android-Thialy.png);
+  background-image: url(../images/TULIPS.png);
 }
 
 .img-proj:hover{
@@ -377,7 +393,6 @@ footer .line-footer p a{
     /* ESPECIALIDADES */
 
     section.especialidades .flex{
-      flex-direction: column;
       padding: 40px 4%;
     }
 
@@ -482,7 +497,6 @@ footer .line-footer p a{
   @media screen and (max-width: 1090px){
 
   section.especialidades .flex{
-    flex-direction: column;
     gap: 1px;
   }
   }
