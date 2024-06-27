@@ -186,7 +186,7 @@ section.especialidades .flex{
 
 /* ESTILO SOBRE */
 section.sobre{
-  padding: 80px 4%;
+  padding: 50px 4% 80px;
 }
 
 section.sobre .img-sobre img{
@@ -288,7 +288,23 @@ section.projetos .flex{
   transition: 0.5s;
 }
 
+section.projetos .interface h3{
+  margin-top: 75px;
+  justify-content: center;
+  text-align: center;
+  color: var(--cor5);
+}
 
+section.projetos .interface a{
+  text-decoration: none;
+  color: #8414ce;
+  transition: 0.5s;
+}
+
+section.projetos .interface a:hover{
+  text-shadow: 0px 0px 5px rgb(141, 3, 205);
+  color: #ae4af0;
+}
 /* FALE COMIGO */
 
 section.contato {
@@ -409,7 +425,7 @@ footer .line-footer p a{
     }
 
     section.sobre{
-      padding: 80px 8%;
+      padding: 30px 8% 80px;
     }
 
     .sobre .txt-sobre h2{
