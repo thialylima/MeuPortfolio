@@ -156,7 +156,7 @@ section.especialidades{
 }
 
 section.especialidades .flex{
-  gap: 40px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -180,7 +180,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box h3{
-  font-size: 28px;
+  font-size: 25px;
   margin: 15px 0;
 }
 
