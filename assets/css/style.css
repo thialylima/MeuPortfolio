@@ -18,7 +18,7 @@
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 body::-webkit-scrollbar-track {
@@ -26,9 +26,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(90, 9, 104); 
+  background-color: rgb(58, 1, 77); 
   border-radius: 20px;  
-  border: 3px solid rgb(91, 7, 119);
+  border: 3px solid rgb(58, 1, 77);
 }
 
 body{
@@ -140,6 +140,16 @@ section.topo-site .flex{
   animation: flutuar 2s ease-in-out infinite alternate;
   filter:drop-shadow(0px 0px 18px #8414ce75);
 }
+
+#inicio .btn-contato button {
+  background-color: #390c55;
+  color: white;
+}
+
+#inicio .btn-contato button:hover {
+    box-shadow: 0px 0px 10px #8716cd;
+  }
+
 
 @keyframes flutuar{
   0%{
@@ -385,6 +395,23 @@ footer .line-footer p a{
     /* TOPO DO SITE */
     section.topo-site{
       padding: 20px 8%;
+    }
+
+    #inicio .txt-topo-site {
+      text-align: center; /* Centraliza o texto dentro da div */
+      margin: 0 auto; /* Opcional: centraliza a div horizontalmente dentro do contêiner, se necessário */
+    }
+    
+    #inicio .txt-topo-site h1, 
+    #inicio .txt-topo-site p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #inicio .btn-contato {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     section.topo-site .flex{
