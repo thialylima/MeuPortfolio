@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio profissional! Este projeto foi desenvolvido utilizan
 
 ## Visão Geral
 
-Este portfólio foi criado com o objetivo de apresentar minhas competências em desenvolvimento web e design. Ele inclui informações sobre mim, meus projetos anteriores e as tecnologias que domino.
+Este portfólio foi criado com o objetivo de apresentar minhas competências. Ele inclui informações sobre mim, meus projetos anteriores e as tecnologias que domino.
 
 ## Tecnologias Utilizadas
 
