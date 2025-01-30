@@ -263,7 +263,7 @@ section.projetos .flex{
 }
 
 .site1{
-  background-image: url(../images/Site-Android-Thialy.png);
+  background-image: url(../images/TASK-MANAGER.png);
 }
 .site2{
   background-image: url(../images/pokedex-site.png);
@@ -609,7 +609,27 @@ footer .line-footer p a{
       margin: 0 auto;
     }
   }
+  
+  
+  @media screen and (max-width: 430px){
+    
+  section.especialidades .flex .especialidades-box i{
+    font-size: 48px;
+  }
+    
+  section.especialidades .flex .especialidades-box h3{
+    font-size: 16px;
+  }
+    
+  section.especialidades .flex .especialidades-box{
+    padding: 5%;
+  }
+    
+  section.especialidades .flex{
+    justify-content: space-between;
+  }
 
+  }
   
   @media screen and (max-width: 415px){
     section.contato .contatos img{
@@ -622,6 +642,24 @@ footer .line-footer p a{
       height: 17vh;
       margin: 0 auto;
     }
+
+      
+    section.especialidades .flex .especialidades-box i{
+      font-size: 48px;
+    }
+      
+    section.especialidades .flex .especialidades-box h3{
+      font-size: 18px;
+    }
+      
+    section.especialidades .flex .especialidades-box{
+      padding: 3%;
+    }
+      
+    section.especialidades .flex{
+      justify-content: space-between;
+    }
+
   }
 
   /*FIM MEDIA QUERY */
